@@ -22,11 +22,6 @@ Excercise 0.5
 
         browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
         activate server
-        server-->>browser: [{}]
-        deactivate server
-
-        browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
-        activate server
         server-->>browser: [{ "content": "fghfgh", "2025-01-21T05:01:39.397Z" }, ... ]
         deactivate server
 
